@@ -49,19 +49,40 @@ import warnings
 warnings.filterwarnings('ignore')
 data=pd.read_csv('clustering(1).csv')
 print(data.head(2))
+
 x1=data.loc[:,['ApplicantIncome','LoanAmount']]
+
 print(x1.head(2))
+
 X=x1.values
+
 sns.scatterplot(X[:,0],X[:,1])
+
 plt.xlabel('Income')
+
 plt.ylabel('Loan')
+
 plt.show()
+
 Kmean=KMeans(n_clusters=4)
+
 Kmean.fit(X)
+
 print('Cluster Centers: ',Kmean.cluster_centers_)
+
 print('Labels:',Kmean.labels_)
+
 predicted_cluster=Kmean.predict([[9200,110]])
+
 print('The clusters group for the Application 9200 and Loan Amount 110  is ',predicted_cluster)
+
+
+
+
+
+
+
+
 ```
 ## Output:
 ![output](./kcluout.png)
