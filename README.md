@@ -42,12 +42,19 @@ Display the predicted_class
 ## Program:
 ```python
 import pandas as pd
+
 import matplotlib.pyplot as plt
+
 from sklearn.cluster import KMeans
+
 import seaborn as sns
+
 import warnings
+
 warnings.filterwarnings('ignore')
+
 data=pd.read_csv('clustering(1).csv')
+
 print(data.head(2))
 
 x1=data.loc[:,['ApplicantIncome','LoanAmount']]
