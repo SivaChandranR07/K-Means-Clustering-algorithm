@@ -41,6 +41,10 @@ Declare a variable predcited_class to kmean.predict([[]]) and give two arguments
 Display the predicted_class
 ## Program:
 ```python
+#Program to implement K-Means Clustering Algorithm.
+#Developed by: Siva Chandran R
+#RegisterNumber: 22005531
+
 import pandas as pd
 
 import matplotlib.pyplot as plt
